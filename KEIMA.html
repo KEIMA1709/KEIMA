@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEIMA</title>
+    <style>
+        /* 全体のリセット */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(180deg, #654c4f 0%, #2b2b2b 100%);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            width: 100%;
+            max-width: 400px;
+            background: #121212;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            position: relative;
+            background-image: url('./images/header.jpg'); /* ローカルファイルを参照 */
+            background-size: cover;
+            background-position: center;
+            height: 150px;
+        }
+
+        .profile-icon {
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #121212;
+            background-color: #fff;
+        }
+
+        .content {
+            text-align: center;
+            padding: 60px 20px 20px;
+        }
+
+        .name {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #3e3e3e;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #575757;
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header">
+            <img src="./images/profile-icon.jpg" alt="プロフィールアイコン" class="profile-icon"> <!-- ローカルファイルを参照 -->
+        </div>
+        <div class="content">
+            <h1 class="name">KEIMA</h1>
+            <div class="buttons">
+                <a href="https://line.me/ti/p/___x7KbBnb" class="btn" target="_blank" rel="noopener">
+                    <img src="./images/line-icon.png" alt="LINEアイコン" class="btn-icon"> <!-- ローカルファイルを参照 -->
+                    Twitter
+                </a>
+                <a href="https://www.instagram.com/keima.1709?igsh=bXl5dmRpaDJyeTFk&utm_source=ig_contact_invite" class="btn" target="_blank" rel="noopener">
+                    <img src="./images/instagram-icon.png" alt="Instagramアイコン" class="btn-icon"> <!-- ローカルファイルを参照 -->
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
